@@ -35,8 +35,6 @@ $.ajax({
         quote.textContent = data;
     }
 }) 
- 
-
 
 // button class="main-btn-2" element 
 let mainBtn2 = document.querySelector(".main-btn-2") 
@@ -45,4 +43,3 @@ mainBtn2.addEventListener("click", generateJokePage);
 function generateJokePage(event){ 
     let landingPage = document.querySelector(".hidden-1") 
 }
-
