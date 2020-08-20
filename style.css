@@ -1,0 +1,88 @@
+
+
+.container { 
+    text-align: center;
+    align-content: center;
+    /* All font */  
+    font-family: 'Roboto', sans-serif;
+} 
+img { 
+    
+    max-width: 100%;
+  height: auto;
+}
+.main-btn { 
+    background-color: #1ddbd0;
+    padding: 20px;
+    border-radius: 60px;
+    
+}   
+.main { 
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}  
+.main:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+/* for joke-set page html    */
+.pick-a-setup{ 
+    padding: 30px;
+    background-color: #C4C4C4;
+    border-radius: 60px;
+    font-size: 30px;
+} 
+.btn-lg { 
+    background-color: #86B2CB;
+    margin: 25px;
+    border-radius: 60px;
+    padding: 30px;
+}   
+.back-to-main {
+    background-color: #1ddbd0;
+    padding: 20px;
+    border-radius: 60px;
+    font-size: 24px;
+} 
+.joke { 
+    color: black;
+    text-decoration: none;
+}   
+
+/* mouse over link for all a tags */
+a:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+
+/* for generate joke page html    */ 
+
+.setup-joke { 
+    padding: 30px;
+    background-color: #C4C4C4;
+    border-radius: 60px;
+    font-size: 30px;
+}
+
+.punchline { 
+    padding: 15px;
+    background-color: #C4C4C4;
+    border-radius: 60px;
+    font-size: 30px; 
+    font-weight: bold;
+} 
+.quote { 
+    padding: 10px;
+    background-color: #C4C4C4;
+    border-radius: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}   
+
+/* All elements that are hidden*/ 
+.hidden-1 { 
+    visibility: hidden;
+}
