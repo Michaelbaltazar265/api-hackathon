@@ -1,6 +1,6 @@
 
 
-.container { 
+.container, .container-2, .container-3 { 
     text-align: center;
     align-content: center;
     /* All font */  
@@ -11,21 +11,16 @@ img {
     max-width: 100%;
   height: auto;
 }
-.main-btn { 
+.main-btn, .back-to-main-3, .back-to-main{ 
     background-color: #1ddbd0;
     padding: 20px;
     border-radius: 60px;
-    
-}   
-.main { 
     font-size: 24px;
-    color: black;
-    text-decoration: none;
-}  
-.main:hover {
-    color: black;
-    text-decoration: none;
-  }
+}   
+button { 
+    cursor:pointer;
+}
+
 
 /* for joke-set page html    */
 .pick-a-setup{ 
@@ -38,14 +33,12 @@ img {
     background-color: #86B2CB;
     margin: 25px;
     border-radius: 60px;
-    padding: 30px;
-}   
-.back-to-main {
-    background-color: #1ddbd0;
     padding: 20px;
-    border-radius: 60px;
-    font-size: 24px;
-} 
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 24px; 
+}   
+
 .joke { 
     color: black;
     text-decoration: none;
@@ -84,5 +77,5 @@ a:hover {
 
 /* All elements that are hidden*/ 
 .hidden-1 { 
-    visibility: hidden;
+    display: none;
 }
