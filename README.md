@@ -1,6 +1,11 @@
+# App Name: Hacky Dad Jokes & Fun Facts From Ron Swanson 
 # api-hackathon
  A hackathon project utlizing the data from two public APIs to create 
-# App Name: Hacky Dad Jokes & Fun Facts From Ron Swanson 
+ 
+# Technologies Used in this Application 
+1. Javascript 
+2. HTML 
+3. CSS 
 
 A web application for people that like horrible dad jokes and fun quotes from Ron Swanson from parks and recreation the TV show.  
 
