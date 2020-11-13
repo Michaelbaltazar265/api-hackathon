@@ -3,9 +3,9 @@
 // button class=main-btn / 
 const button1 = document.querySelector(".main-btn"); 
 // container for page  /Pick a Setup and see what happens / 
-const container2 = document.querySelector(".container-2"); 
+const container2 = document.querySelector(".con-2 "); 
 // class=container-3       /
-const container3 = document.querySelector(".container-3");
+const container3 = document.querySelector(".con-3");
 // container for main page  /
 const mainContainer = document.querySelector(".container"); 
 //button class=back-to-main / 
@@ -13,9 +13,7 @@ const backToMain = document.querySelector(".back-to-main");
 //button class=back-to-main-2 /
 const backToMain3 = document.querySelector(".back-to-main-3");
 //button class=btn-lg btn1 / 
-const btnSetup1 = document.querySelector(".btn-1");
-//  pick a number for images 
-const imageNumb = Math.floor(Math.random() * 5);   
+const btnSetup1 = document.querySelector(".btn-1");  
 // putting the images as variables 
 // get-ready-meme" class= img-1 
 const img1 = document.querySelector(".img-1");
@@ -35,6 +33,8 @@ const img6 = document.querySelector(".img-6");
  const punchline = document.querySelector(".punchline"); 
  // Ron Swanson quote 
  const quote = document.querySelector(".quote");
+ //  pick a number for images 
+let imageNumb = Math.floor(Math.random() * 5); 
 // Event listener 
 button1.addEventListener("click", generateJokePage); 
 backToMain.addEventListener("click", generateBackMain);  
@@ -50,6 +50,7 @@ backToMain3.addEventListener("click", generateBackSetup);
          //btnSetup1.addEventListener("click",generate1stJoke);
          btnSetup1.addEventListener("click",generate1stJoke); 
          function generate1stJoke(event){ 
+            btnSetup1.removeEventListener("click", generate1stJoke)
             container2.classList.add("hidden-1");
             mainContainer.classList.add("hidden-1");
             container3.classList.remove("hidden-1"); 
@@ -94,7 +95,7 @@ callRonSwanson();
  function generateJokePage(event){ 
      container2.classList.remove("hidden-1");
      mainContainer.classList.add("hidden-1");  
-     getRandomImage ()
+     getRandomImage ();
  }
 
  function generateBackMain(event){ 
@@ -106,8 +107,9 @@ callRonSwanson();
     container3.classList.add("hidden-1");
     mainContainer.classList.add("hidden-1");
     container2.classList.remove("hidden-1");  
-    clearJoke() 
-    getRandomImage ()
+    imageNumb = Math.floor(Math.random() * 5);
+    clearJoke(); 
+    getRandomImage();
  }   
 
  function getRandomImage (){ 
@@ -129,5 +131,5 @@ callRonSwanson();
    else if (imageNumb === 5){ 
       img6.classList.remove("hidden-1");
    } 
- }
+ };
 

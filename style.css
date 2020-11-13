@@ -1,15 +1,16 @@
 
 
-.container, .container-2, .container-3 { 
+.container { 
     text-align: center;
     align-content: center;
     /* All font */  
     font-family: 'Roboto', sans-serif;
 } 
 img { 
+    height: 40rem;
     
-    max-width: 100%;
-  height: auto;
+    /* max-width: 100%; */
+  /* height: auto; */
 }
 .main-btn, .back-to-main-3, .back-to-main{ 
     background-color: #1ddbd0;
@@ -23,12 +24,9 @@ button {
 
 
 /* for joke-set page html    */
-.pick-a-setup{ 
-    padding: 30px;
-    background-color: #C4C4C4;
-    border-radius: 60px;
-    font-size: 30px;
-} 
+ .pick-a-setup{ 
+    font-size: 20px;
+}  
 .btn-lg { 
     background-color: #86B2CB;
     margin: 25px;
@@ -73,9 +71,49 @@ a:hover {
     border-radius: 60px;
     font-size: 20px;
     font-weight: bold;
-}   
+} 
+
+.space { 
+    padding: 2rem;
+}
 
 /* All elements that are hidden*/ 
 .hidden-1 { 
     display: none;
+} 
+
+/* The media queries below will automatically adjust the set width of the
+container class depending on the size of the current browser window. Notice
+how the containers get smaller as the size of the screen gets smaller. Without
+media queries, building responsive designs is almost impossible, as it is important
+for the content of the website to adapt to the screen it is displayed on. */
+
+@media only screen and (max-width: 1250px) {
+    .container , .container-2 , .container-3 {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container , .container-2 , .container-3 {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container , .container-2 , .container-3 {
+        max-width: 575px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container , .container-2 , .container-3 {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container , .container-2 , .container-3 {
+        max-width: 420px;
+    }
 }
