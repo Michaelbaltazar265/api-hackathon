@@ -88,32 +88,11 @@ how the containers get smaller as the size of the screen gets smaller. Without
 media queries, building responsive designs is almost impossible, as it is important
 for the content of the website to adapt to the screen it is displayed on. */
 
-@media only screen and (max-width: 1250px) {
-    .container , .container-2 , .container-3 {
-        max-width: 960px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .container , .container-2 , .container-3 {
-        max-width: 720px;
-    }
-}
 
 @media only screen and (max-width: 768px) {
-    .container , .container-2 , .container-3 {
+    .container{
         max-width: 575px;
     }
+    
 }
 
-@media only screen and (max-width: 576px) {
-    .container , .container-2 , .container-3 {
-        max-width: 500px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .container , .container-2 , .container-3 {
-        max-width: 420px;
-    }
-}
