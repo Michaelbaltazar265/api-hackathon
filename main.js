@@ -75,15 +75,6 @@ $.ajax({
         quote.textContent = data;
     }
 }) 
-
-
-// button class="main-btn-2" element 
-let mainBtn2 = document.querySelector(".main-btn-2") 
-console.log(mainBtn2)
-mainBtn2.addEventListener("click", generateJokePage); 
-function generateJokePage(event){ 
-    let landingPage = document.querySelector(".hidden-1") 
-}
 }  
 function clearJoke(){ 
    setUpJoke.textContent = " ";
@@ -141,8 +132,7 @@ callRonSwanson();
       img6.classList.remove("hidden-1");
    } 
 
- }
-
  };
+
 
 
