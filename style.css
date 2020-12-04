@@ -5,21 +5,24 @@
     align-content: center;
     /* All font */  
     font-family: 'Roboto', sans-serif;
-} 
-img { 
-    height: 40rem;
-    
-    /* max-width: 100%; */
-  /* height: auto; */
+}  
+
+.row-1 { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.main-btn, .back-to-main-3, .back-to-main{ 
-    background-color: #1ddbd0;
-    padding: 20px;
-    border-radius: 60px;
-    font-size: 24px;
-}   
+img { 
+    height: 35rem;
+    width: 35rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
+
 button { 
     cursor:pointer;
+    margin: 1rem;
 }
 
 
@@ -29,11 +32,7 @@ button {
 }  
 .btn-lg { 
     background-color: #86B2CB;
-    margin: 25px;
     border-radius: 60px;
-    padding: 10px;
-    padding-left: 90px;
-    padding-right: 90px;
     font-size: 24px; 
 }   
 
@@ -64,6 +63,7 @@ a:hover {
     border-radius: 60px;
     font-size: 30px; 
     font-weight: bold;
+    color: rgb(0,0,0);
 } 
 .quote { 
     padding: 10px;
