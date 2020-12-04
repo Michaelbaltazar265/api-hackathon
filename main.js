@@ -2,12 +2,11 @@
 
 // button class=main-btn / 
 const mainPage = document.querySelector(".main-btn");
-// container for page  /Pick a Setup and see what happens / 
-const picPage = document.querySelector(".con-2 ");          //
+// container for page  /Pick a Setup and see what happens 
+const picPage = document.querySelector(".con-2 ");          
 // class=container-3       /
 const container3 = document.querySelector(".con-3");
 const container4 = document.querySelector(".con-4");
-console.log(container4)
 // container for main page  /
 const mainContainer = document.querySelector(".container");
 //button class=back-to-main / 
@@ -17,7 +16,6 @@ const backToMain3 = document.querySelector(".back-to-main-3");
 //button class=btn-lg btn1 / 
 const btnSetup1 = document.querySelector(".btn-1");
 const deliver = document.querySelector(".deliver");
-console.log(deliver)
 // putting the images as variables 
 // get-ready-meme" class= img-1 
 const img1 = document.querySelector(".img-1");
@@ -33,7 +31,6 @@ const img5 = document.querySelector(".img-5");
 const img6 = document.querySelector(".img-6");
 // joke1 is pressed  
 const setUpJoke = document.querySelector(".setup-joke");
-console.log(setUpJoke)
 //punchline element
 const punchline = document.querySelector(".punchline");
 // Ron Swanson quote 
@@ -163,6 +160,5 @@ function getRandomImage() {
    }
 
 };
-
 
 
