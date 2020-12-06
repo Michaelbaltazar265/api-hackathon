@@ -37,6 +37,7 @@ const punchline = document.querySelector(".punchline");
 // Ron Swanson quote 
 const quote = document.querySelector(".quote");
 const closeModal = document.querySelector(".close-modal"); 
+const modal = document.querySelector(".modal");
 //  pick a number for images 
 let imageNumb = Math.floor(Math.random() * 5);
 // Event listener 
@@ -57,11 +58,10 @@ function callDadJoke() {
          const randomJk = data[Math.floor(Math.random() * 9)];
          btnSetup1.addEventListener("click", generate1stJoke);
          deliver.addEventListener("click", generateDeliver);
-         const modal = document.querySelector(".modal");
+        
          function generateDeliver(event) {
+            deliver.removeEventListener("click",generateDeliver)
             modal.style.display = "block";
-            // container4.classList.add("hidden-1");
-            // container3.classList.remove("hidden-1");
             modalSetupJk.textContent = randomJk.setup
             let number = 3;
             const timer = setInterval(myTimer, 1000)
@@ -90,7 +90,7 @@ function callDadJoke() {
          }
          function generate1stJoke(event) {
             btnSetup1.removeEventListener("click", generate1stJoke)
-            picPage.classList.add("hidden-1");                 ///
+            picPage.classList.add("hidden-1");                 
             mainContainer.classList.add("hidden-1");
             container4.classList.remove("hidden-1");
             setUpJoke.textContent = randomJk.setup
@@ -111,7 +111,8 @@ function callRonSwanson() {
    })
 }
 function clearJoke() {
-   setUpJoke.textContent = " ";
+   const remove1 = modal.style.display = "none"
+   modalSetupJk.textContent = " ";
    quote.textContent = " ";
    punchline.textContent = "Here comes the punchline..."
    img6.classList.add("hidden-1");
@@ -170,7 +171,6 @@ function getRandomImage() {
 
 
 function generateRonSwanson(event){ 
-   console.log(event)
    container4.classList.add("hidden-1");
    container3.classList.remove("hidden-1");
 }
