@@ -38,6 +38,7 @@ const punchline = document.querySelector(".punchline");
 const quote = document.querySelector(".quote");
 const closeModal = document.querySelector(".close-modal"); 
 const modal = document.querySelector(".modal");
+const errorPage = document.querySelector(".error-page")
 //  pick a number for images 
 let imageNumb = Math.floor(Math.random() * 5);
 // Event listener 
@@ -53,6 +54,15 @@ function callDadJoke() {
    $.ajax({
       url: "https://official-joke-api.appspot.com/random_ten",
       method: "GET",
+      error: function (error){ 
+         picPage.classList.add("hidden-1"); 
+         container3.classList.add("hidden-1");
+         container4.classList.add("hidden-1");
+         mainContainer.classList.add("hidden-1");
+         errorPage.classList.remove("hidden-1")
+
+
+      },
       success: function (data) {
          // pick a random number between 1-9 for the index of the data object
          const randomJk = data[Math.floor(Math.random() * 9)];
@@ -104,6 +114,15 @@ function callRonSwanson() {
    $.ajax({
       url: "https://ron-swanson-quotes.herokuapp.com/v2/quotes",
       method: "GET",
+      error: function (error){ 
+         picPage.classList.add("hidden-1"); 
+         container3.classList.add("hidden-1");
+         container4.classList.add("hidden-1");
+         mainContainer.classList.add("hidden-1");
+         errorPage.classList.remove("hidden-1")
+
+
+      },
       success: function (data) {
          // Ron Swanson quote element 
          quote.textContent = data;
@@ -128,20 +147,20 @@ function clearJoke() {
 callRonSwanson();
 
 function generateJokePage(event) {
-   picPage.classList.remove("hidden-1");    ///
+   picPage.classList.remove("hidden-1");    
    mainContainer.classList.add("hidden-1");
    getRandomImage();
 }
 
 function generateBackMain(event) {
-   picPage.classList.add("hidden-1");       ///
+   picPage.classList.add("hidden-1");       
    mainContainer.classList.remove("hidden-1");
 }
 
 function generateBackSetup(event) {
    container3.classList.add("hidden-1");
    mainContainer.classList.add("hidden-1");
-   picPage.classList.remove("hidden-1");   ///
+   picPage.classList.remove("hidden-1");   
    imageNumb = Math.floor(Math.random() * 5);
    clearJoke();
    getRandomImage();

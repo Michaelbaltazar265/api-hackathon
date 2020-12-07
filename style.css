@@ -114,6 +114,10 @@ a:hover {
     width: 80%;
 }
 
+.red { 
+    color: red;
+}
+
 /* The media queries below will automatically adjust the set width of the
 container class depending on the size of the current browser window. Notice
 how the containers get smaller as the size of the screen gets smaller. Without
