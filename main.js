@@ -39,16 +39,14 @@ const quote = document.querySelector(".quote");
 const closeModal = document.querySelector(".close-modal"); 
 const modal = document.querySelector(".modal");
 const errorPage = document.querySelector(".error-page")
+const modalfooter = document.querySelector("modal-footer")
 //  pick a number for images 
 let imageNumb = Math.floor(Math.random() * 5);
 // Event listener 
 mainPage.addEventListener("click", generateJokePage);
 backToMain.addEventListener("click", generateBackMain);
 backToMain3.addEventListener("click", generateBackSetup);
-closeModal.addEventListener("click", generateRonSwanson);
-
-
-
+ closeModal.addEventListener("click", generateRonSwanson);
 
 function callDadJoke() {
    $.ajax({
@@ -94,6 +92,7 @@ function callDadJoke() {
                } else if (number === 0) {
                   document.querySelector('.punchline').style.background = colors[3]
                   punchline.textContent = randomJk.punchline;
+                  closeModal.classList.remove("hidden-1")
                   clearInterval(timer);
                }
             }
@@ -190,6 +189,8 @@ function getRandomImage() {
 
 
 function generateRonSwanson(event){ 
+   mainContainer.classList.add("hidden-1");
+   picPage.classList.add("hidden-1");
    container4.classList.add("hidden-1");
    container3.classList.remove("hidden-1");
-}
+};
