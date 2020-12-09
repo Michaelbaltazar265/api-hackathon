@@ -132,7 +132,8 @@ function clearJoke() {
    const remove1 = modal.style.display = "none"
    modalSetupJk.textContent = " ";
    quote.textContent = " ";
-   punchline.textContent = "Here comes the punchline..."
+   punchline.textContent = "Here comes the punchline...";
+   closeModal.classList.add("hidden-1")
    img6.classList.add("hidden-1");
    img5.classList.add("hidden-1");
    img4.classList.add("hidden-1");
